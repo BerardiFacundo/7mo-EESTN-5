@@ -1,0 +1,68 @@
+a) Crear una tabla llamada MARCAS
+Este comando crea una tabla llamada MARCAS con tres columnas: IdMarca, NombreMarca y NombreCiudad. La columna IdMarca es la clave primaria y no puede ser nula, con un valor predeterminado de 1. Las columnas NombreMarca y NombreCiudad también son obligatorias.
+
+CREATE TABLE MARCAS (
+    IdMarca SMALLINT NOT NULL DEFAULT 1,
+    NombreMarca CHAR(10) NOT NULL,
+    NombreCiudad CHAR(60) NOT NULL,
+    PRIMARY KEY (IdMarca)
+)
+
+b) Crear una tabla llamada COCHES
+Este comando crea una tabla llamada COCHES con tres columnas: codcoche, nombre y modelo. La columna codcoche es la clave primaria y no puede ser nula. Las columnas nombre y modelo son opcionales, pero nombre no puede ser nula.
+
+CREATE TABLE COCHES (
+    codcoche SMALLINT NOT NULL,
+    nombre CHAR(15) NOT NULL,
+    modelo CHAR(10),
+    PRIMARY KEY (codcoche)
+)
+
+c) Crear una tabla llamada MARCO que relaciona MARCAS y COCHES
+Este comando crea una tabla llamada MARCO con dos columnas: IdMarca y codcoche. Ambas columnas forman una clave primaria compuesta. Además, IdMarca es una clave foránea que referencia a la columna IdMarca de la tabla MARCAS y codcoche es una clave foránea que referencia a la columna codcoche de la tabla COCHES.
+
+CREATE TABLE MARCO (
+    IdMarca SMALLINT NOT NULL,
+    codcoche SMALLINT NOT NULL,
+    PRIMARY KEY (IdMarca, codcoche),
+    FOREIGN KEY (IdMarca) REFERENCES MARCAS(IdMarca),
+    FOREIGN KEY (codcoche) REFERENCES COCHES(codcoche)
+)
+
+d) Insertar datos en la tabla MARCAS
+Estos comandos insertan cuatro filas en la tabla MARCAS con los valores especificados para IdMarca, NombreMarca y NombreCiudad.
+
+INSERT INTO MARCAS VALUES (1, 'vw', 'Mar del Plata')
+INSERT INTO MARCAS VALUES (2, 'renault', 'Rosario')
+INSERT INTO MARCAS VALUES (3, 'fiat', 'Cordoba')
+INSERT INTO MARCAS VALUES (4, 'ford', 'Neuquen')
+
+e) Seleccionar todos los datos de la tabla MARCAS
+Este comando selecciona todas las columnas y filas de la tabla MARCAS.
+
+SELECT * FROM MARCAS
+
+f) Seleccionar las columnas NombreMarca y NombreCiudad de la tabla MARCAS
+Este comando selecciona únicamente las columnas NombreMarca y NombreCiudad de todas las filas de la tabla MARCAS.
+
+SELECT NombreMarca, NombreCiudad FROM MARCAS
+
+g) Seleccionar los datos de la tabla MARCAS donde IdMarca es igual a 2
+Este comando selecciona las columnas NombreMarca y NombreCiudad de la fila donde IdMarca es igual a 2.
+
+SELECT NombreMarca, NombreCiudad FROM MARCAS WHERE IdMarca = 2
+
+h) Seleccionar los datos de la tabla MARCAS donde NombreCiudad es 'Neuquen'
+Este comando selecciona las columnas NombreMarca y NombreCiudad de la fila donde NombreCiudad es igual a 'Neuquen'.
+
+SELECT NombreMarca, NombreCiudad FROM MARCAS WHERE NombreCiudad = 'Neuquen'
+
+i) Seleccionar los datos de la tabla MARCAS donde NombreCiudad comienza con 'S'
+Este comando selecciona las columnas NombreMarca y NombreCiudad de las filas donde NombreCiudad empieza con la letra 'S'.
+
+SELECT NombreMarca, NombreCiudad FROM MARCAS WHERE NombreCiudad LIKE 'S%'
+
+j) Actualizar la columna NombreCiudad de la tabla MARCAS
+Este comando actualiza el valor de la columna NombreCiudad a 'Neuquen' en todas las filas donde NombreCiudad es igual a 'Jujuy'.
+
+UPDATE MARCAS SET NombreCiudad = 'Neuquen' WHERE NombreCiudad = 'Jujuy'
