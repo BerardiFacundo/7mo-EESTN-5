@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+}
+table {
+  text-align: center;
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+}
+
+table, th, td {
+  border: 1px solid rgb(18, 0, 53);
+  
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+}
+body{
+  background-color: rgba(171, 255, 213, 0.795);
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
+
+th {
+  background-color: rgba(164, 197, 216, 0.808);
+}
+
