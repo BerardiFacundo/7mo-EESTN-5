@@ -1,0 +1,66 @@
+.contador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 50vh;
+  margin: 50px 0 50px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.botonesContador {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.botonSuma {
+  background-color: #71c792;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.botonSuma:hover {
+  transition: 500ms;
+  background-color: #30fd7f;
+}
+
+.botonSuma:active {
+  background-color: #3e8e41;
+  transition: 0ms;
+}
+
+.botonResta {
+  background-color: #ac6767;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.botonResta:hover {
+  transition: 500ms;
+  background-color: #ff5454;
+}
+
+.botonResta:active {
+  transition: 0ms;
+  background-color: #8e3e3e;
+}

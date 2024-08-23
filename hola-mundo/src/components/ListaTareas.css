@@ -1,0 +1,153 @@
+.lista-tareas {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.lista-tareas h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-tarea {
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.boton-agregar {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-agregar:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tarea span {
+  cursor: pointer;
+}
+
+.tarea.completada span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.boton-eliminar {
+  padding: 5px 10px;
+  font-size: 0.9em;
+  color: white;
+  background-color: #f44336;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.boton-eliminar:hover {
+  background-color: #e53935;
+}
+.lista-tareas {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.lista-tareas h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-tarea {
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.boton-agregar {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #5580d1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-agregar:hover {
+  background-color: #0043be;
+  transition: 0.5s;
+}
+.boton-agregar:active {
+  background-color: #130081;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tarea span {
+  cursor: pointer;
+}
+
+.tarea.no-completada span {
+  color: #333; 
+}
+
+.tarea.completada span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.boton-eliminar {
+  padding: 5px 10px;
+  font-size: 0.9em;
+  color: white;
+  background-color: #d4756f;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.boton-eliminar:hover {
+  background-color: #ff0400;
+  transition: 1s;
+}
+.boton-eliminar:active {
+  background-color: #5c0907;
+  transition: 0.3s;
+}
