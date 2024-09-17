@@ -1,0 +1,21 @@
+body {
+  background-color: #f8f9fa;
+}
+
+h1, h5 {
+  color: #343a40;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin-top: 50px;
+}
